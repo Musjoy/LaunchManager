@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LaunchManager'
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "This will execute an action after luanch complete."
   
   s.homepage         = "https://github.com/Musjoy/LaunchManager"
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '7.0'
   
   s.user_target_xcconfig = {
-  'GCC_PREPROCESSOR_DEFINITIONS' => 'MODULE_LUANCH_MANAGER'
+    'GCC_PREPROCESSOR_DEFINITIONS' => 'MODULE_LAUNCH_MANAGER'
   }
   
   s.source_files = 'LaunchManager/Classes/**/*'
