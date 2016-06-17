@@ -57,7 +57,7 @@ static BOOL g_appHadLaunch = NO;                        /**< 应用程序是否�
     [[self shareInstance] launchComplete];
 }
 
-+ (void)registerLaunchAction:(LuanchCompleteBlock)block
++ (void)registerLaunchAction:(LaunchCompleteBlock)block
 {
     [[self shareInstance] registerLaunchAction:block];
 }
@@ -70,13 +70,13 @@ static BOOL g_appHadLaunch = NO;                        /**< 应用程序是否�
         return;
     }
     g_appHadLaunch = YES;
-    for (LuanchCompleteBlock block in self.arrLaunchBlock) {
+    for (LaunchCompleteBlock block in self.arrLaunchBlock) {
         block();
     }
     [self.arrLaunchBlock removeAllObjects];
 }
 
-- (void)registerLaunchAction:(LuanchCompleteBlock)block
+- (void)registerLaunchAction:(LaunchCompleteBlock)block
 {
     if (block == NULL) {
         return;

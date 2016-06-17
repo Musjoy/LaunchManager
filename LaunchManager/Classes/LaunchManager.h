@@ -8,11 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-#ifndef MODULE_LUANCH_MANAGER
-#define MODULE_LUANCH_MANAGER
+#ifndef MODULE_LAUNCH_MANAGER
+#define MODULE_LAUNCH_MANAGER
 #endif
 
-typedef void (^LuanchCompleteBlock)(void);
+typedef void (^LaunchCompleteBlock)(void);
 
 
 @interface LaunchManager : NSObject
@@ -23,6 +23,6 @@ typedef void (^LuanchCompleteBlock)(void);
 + (void)launchComplete;
 
 /// 注册app启动才能掉用的方法，如果app早已启动则直接执行block。block只会执行一次
-+ (void)registerLaunchAction:(LuanchCompleteBlock)block;
++ (void)registerLaunchAction:(LaunchCompleteBlock)block;
 
 @end
