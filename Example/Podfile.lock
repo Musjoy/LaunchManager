@@ -1,0 +1,16 @@
+PODS:
+  - LaunchManager (0.1.0)
+
+DEPENDENCIES:
+  - LaunchManager (from `../`)
+
+EXTERNAL SOURCES:
+  LaunchManager:
+    :path: ../
+
+SPEC CHECKSUMS:
+  LaunchManager: 6e524ccfb287eac116edbfc416ce4bca7c658cc2
+
+PODFILE CHECKSUM: 260d32e5248c0d05584bf8d94566e7c97be24ae2
+
+COCOAPODS: 1.0.1
