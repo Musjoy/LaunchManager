@@ -21,7 +21,7 @@ static BOOL g_appHadLaunch = NO;                        /**< 应用程序是否�
 @implementation LaunchManager
 
 
-+ (instancetype)shareInstance
++ (instancetype)sharedInstance
 {
     static dispatch_once_t once_patch;
     dispatch_once(&once_patch, ^() {
@@ -54,12 +54,12 @@ static BOOL g_appHadLaunch = NO;                        /**< 应用程序是否�
 
 + (void)launchComplete
 {
-    [[self shareInstance] launchComplete];
+    [[self sharedInstance] launchComplete];
 }
 
 + (void)registerLaunchAction:(LaunchCompleteBlock)block
 {
-    [[self shareInstance] registerLaunchAction:block];
+    [[self sharedInstance] registerLaunchAction:block];
 }
 
 #pragma mark - Private

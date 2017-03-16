@@ -17,7 +17,7 @@ typedef void (^LaunchCompleteBlock)(void);
 
 @interface LaunchManager : NSObject
 
-+ (instancetype)shareInstance;
++ (instancetype)sharedInstance;
 
 /// 启动完成时掉用，即rootViewController在viewDidAppear的时候掉用
 + (void)launchComplete;
