@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LaunchManager'
-  s.version          = "0.1.1"
+  s.version          = "0.1.2"
   s.summary          = "This will execute an action after launch complete."
   
   s.homepage         = "https://github.com/Musjoy/LaunchManager"
