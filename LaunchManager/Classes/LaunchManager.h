@@ -25,4 +25,7 @@ typedef void (^LaunchCompleteBlock)(void);
 /// 注册app启动才能掉用的方法，如果app早已启动则直接执行block。block只会执行一次
 + (void)registerLaunchAction:(LaunchCompleteBlock)block;
 
+/// App是否已经启动完成
++ (BOOL)isLaunchCompleted;
+
 @end

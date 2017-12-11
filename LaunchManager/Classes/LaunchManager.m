@@ -88,4 +88,9 @@ static BOOL g_appHadLaunch = NO;                        /**< 应用程序是否�
     [self.arrLaunchBlock addObject:block];
 }
 
++ (BOOL)isLaunchCompleted
+{
+    return g_appHadLaunch;
+}
+
 @end
